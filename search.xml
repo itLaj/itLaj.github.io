@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>github pages搭建博客</title>
+    <url>/2020/03/02/github-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h2><ul>
+<li>安装node.js :官网下载<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a>，windows系统直接msi包安装，安装过程中有一个是否添加到环境变量，默认应该是勾选的，全程next搞定。</li>
+<li>安装git：同样官网下载<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a>，一路next完成。</li>
+</ul>
+<h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a><strong>github pages</strong></h2><ol>
+<li><p>新建仓库，仓库名需要以<code>.github.io</code>结尾，例如<code>jack.github.io</code>，勾选初始化README</p>
+<p><img src="https://i.loli.net/2020/03/02/32B18t4CnqUhYZ5.png" alt=""></p>
+</li>
+<li><p>进入仓库后选择setting</p>
+<p><img src="https://i.loli.net/2020/03/02/4zeaJjONwngLk1x.png" alt=""></p>
+</li>
+</ol>
+<ol start="3">
+<li><p>往下拉到GitHub Pages选择一个主题</p>
+<p><img src="https://i.loli.net/2020/03/02/O1fw9alW2zitCAp.png" alt=""></p>
+</li>
+<li><p>跳转到这个页面，直接<code>commit changes</code>就行</p>
+<p><img src="https://i.loli.net/2020/03/02/fNEQW7S2hZdizoa.png" alt=""></p>
+</li>
+<li><p>在浏览器中输入url，例如<code>jack.github.io</code>即可访问</p>
+</li>
+</ol>
+<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a><strong>hexo</strong></h2><ol>
+<li>新建文件夹作为博客的根目录，例如D:\blog，进入目录，在文件管理器路径框输入cmd</li>
+</ol>
+<p><img src="https://i.loli.net/2020/03/02/hjuXgl159SqVBUG.png" alt=""></p>
+<ol start="2">
+<li>在cmd控制台中输入<code>npm -i hexo-cli -g</code>安装hexo，hexo  -v可以检查是否安装成功</li>
+<li>在cmd控制台中输入<code>hexo init</code>初始化文件夹，完成后输入<code>npm install</code>安装必备的组件，这两步可能执行较慢，请耐心等待</li>
+<li>完成安装后<ul>
+<li>输入<code>hexo g</code>(<code>hexo generate</code>简写)生成网页</li>
+<li>然后输入<code>hexo s</code> (`hexo server简写)启动服务器</li>
+<li>在浏览器输入<a href="localhost:4000">localhost:4000</a>即可访问hexo主页</li>
+</ul>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>windows激活</title>
     <url>/2020/03/01/windows%E6%BF%80%E6%B4%BB/</url>
     <content><![CDATA[<ol>

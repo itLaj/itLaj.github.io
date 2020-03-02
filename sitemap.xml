@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://yoursite.com/2020/03/02/github-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     
-    <lastmod>2020-03-02T12:13:21.436Z</lastmod>
+    <lastmod>2020-03-02T14:36:06.645Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2020-03-02T12:12:19.858Z</lastmod>
+    <lastmod>2020-03-02T12:20:29.560Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2020-03-02T12:13:21.436Z</lastmod>
     
   </url>
   
