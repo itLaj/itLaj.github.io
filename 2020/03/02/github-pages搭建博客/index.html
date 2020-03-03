@@ -53,6 +53,10 @@
   <time datetime="2020-03-02T14:35:20.000Z" itemprop="datePublished">2020-03-02</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
+  </div>
+
       
       
 <div class="word_count">
@@ -60,7 +64,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">297字</span>
+            <span class="post-count">487字</span>
         </span>
     </span>
 
@@ -97,39 +101,58 @@
 
       
       <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a><strong>安装</strong></h2><ul>
-<li>安装node.js :官网下载<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a>，windows系统直接msi包安装，安装过程中有一个是否添加到环境变量，默认应该是勾选的，全程next搞定。</li>
-<li>安装git：同样官网下载<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a>，一路next完成。</li>
+<li>安装node.js :官网下载<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js</a> ，windows系统直接msi包安装，安装过程中有一个是否添加到环境变量，默认应该是勾选的，全程next搞定。</li>
+<li>安装git：同样官网下载<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>，一路next完成。</li>
 </ul>
-<h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a><strong>github pages</strong></h2><ol>
-<li><p>新建仓库，仓库名需要以<code>.github.io</code>结尾，例如<code>jack.github.io</code>，勾选初始化README</p>
-<p><img src="https://i.loli.net/2020/03/02/32B18t4CnqUhYZ5.png" alt=""></p>
+<h2 id="github-pages配置"><a href="#github-pages配置" class="headerlink" title="github pages配置"></a><strong>github pages</strong>配置</h2><ol>
+<li><p>新建仓库，仓库需要命名为<code>&lt;你的 GitHub 用户名&gt;.github.io</code>），勾选初始化README（我已经有这个仓库了所以会报错，但是新建的仓库名必须按照此格式命名</p>
+<p><img src="https://raw.githubusercontent.com/itLaj/image/master/image/image-20200303154056344.png" alt=""></p>
 </li>
 <li><p>进入仓库后选择setting</p>
-<p><img src="https://i.loli.net/2020/03/02/4zeaJjONwngLk1x.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/itLaj/image/master/image/image-20200303154142245.png" alt=""></p>
 </li>
 </ol>
 <ol start="3">
-<li><p>往下拉到GitHub Pages选择一个主题</p>
-<p><img src="https://i.loli.net/2020/03/02/O1fw9alW2zitCAp.png" alt=""></p>
+<li><p>往下拉到<code>GitHub Pages</code>选择<code>master branch</code>之后点击<code>Choose a theme</code>选择主题</p>
+<p><img src="https://raw.githubusercontent.com/itLaj/image/master/image/O1fw9alW2zitCAp.png" alt=""></p>
 </li>
-<li><p>跳转到这个页面，直接<code>commit changes</code>就行</p>
-<p><img src="https://i.loli.net/2020/03/02/fNEQW7S2hZdizoa.png" alt=""></p>
+<li><p>然后挑一个你喜欢的主题，点击<code>Select theme</code></p>
+<p><img src="https://raw.githubusercontent.com/itLaj/image/master/image/image-20200303154618396.png" alt=""></p>
 </li>
-<li><p>在浏览器中输入url，例如<code>jack.github.io</code>即可访问</p>
+<li><p>之后跳转到这个页面(有时候不会跳转，玄学)，直接拉到最下面<code>commit changes</code>就行</p>
+<p><img src="github-pages%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.assets/fNEQW7S2hZdizoa.png" alt=""></p>
+</li>
+<li><p>在浏览器中输入url，例如<code>itLaj.github.io</code>即可访问</p>
 </li>
 </ol>
-<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a><strong>hexo</strong></h2><ol>
+<h2 id="hexo安装与初始化"><a href="#hexo安装与初始化" class="headerlink" title="hexo安装与初始化"></a><strong>hexo安装与初始化</strong></h2><ol>
 <li>新建文件夹作为博客的根目录，例如D:\blog，进入目录，在文件管理器路径框输入cmd</li>
 </ol>
-<p><img src="https://i.loli.net/2020/03/02/hjuXgl159SqVBUG.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/itLaj/image/master/image/hjuXgl159SqVBUG.png" alt=""></p>
 <ol start="2">
-<li>在cmd控制台中输入<code>npm -i hexo-cli -g</code>安装hexo，hexo  -v可以检查是否安装成功</li>
-<li>在cmd控制台中输入<code>hexo init</code>初始化文件夹，完成后输入<code>npm install</code>安装必备的组件，这两步可能执行较慢，请耐心等待</li>
-<li>完成安装后<ul>
+<li><p>在cmd控制台中输入<code>npm install -g hexo-cli</code>安装hexo，<code>hexo  -v</code>命令可以检查是否安装成功</p>
+<p><img src="https://raw.githubusercontent.com/itLaj/image/master/image/image-20200303155526623.png" alt=""></p>
+</li>
+<li><p>在cmd控制台中输入<code>hexo init</code>初始化文件夹，完成后输入<code>npm install</code>安装必备的组件，这两步可能执行较慢，请耐心等待</p>
+</li>
+<li><p>完成安装后</p>
+<ul>
 <li>输入<code>hexo g</code>(<code>hexo generate</code>简写)生成网页</li>
-<li>然后输入<code>hexo s</code> (`hexo server简写)启动服务器</li>
+<li>然后输入<code>hexo s</code> (<code>hexo server</code>简写)启动服务器</li>
 <li>在浏览器输入<a href="localhost:4000">localhost:4000</a>即可访问hexo主页</li>
 </ul>
+<p><img src="https://raw.githubusercontent.com/itLaj/image/master/image/image-20200303160007147.png" alt=""></p>
+</li>
+</ol>
+<h2 id="网站发布"><a href="#网站发布" class="headerlink" title="网站发布"></a>网站发布</h2><ol>
+<li><p>首先是连接github与本地的git</p>
+</li>
+<li><p>打开博客根目录里的<code>_config.yml</code>文件，修改最后一行配置，仓库地址填写刚刚注册的仓库地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: </span><br><span class="line">    github: https:&#x2F;&#x2F;github.com&#x2F;itLaj&#x2F;itLaj.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装Git部署插件<code>npm install hexo-deployer-git</code>，然后输入<code>hexo d</code>发布网站就可以了</p>
+</li>
+<li><p>在浏览器中输入github pages的地址就可以访问你的网站了</p>
 </li>
 </ol>
 
@@ -208,6 +231,8 @@
 <div id="share-mask"></div>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github-pages/" rel="tag">github pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
+
 
     </footer>
 
@@ -356,15 +381,7 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/null">摄影</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于我</a>
     </li>
     
   </ul>
@@ -377,10 +394,6 @@
         <i class="ri-search-line"></i>
       </a>
       
-      
-      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
-        <i class="ri-rss-line"></i>
-      </a>
       
     </li>
   </ul>
